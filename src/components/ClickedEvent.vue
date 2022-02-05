@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>Name: {{ name }}</p>
+    <p>Age: {{ age }}</p>
     <button @click="changeName">Change Name</button>
   </div>
 </template>
@@ -21,6 +22,7 @@ export default {
     changeName() {
       //   console.log("change name");
       this.name = "asdsadsa";
+      this.age++;
     },
   },
 };
