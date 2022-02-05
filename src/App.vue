@@ -1,11 +1,12 @@
 <template>
-  <h1>Hello Vue</h1>
+  <FirstComponent />
 </template>
 
 <script>
+import FirstComponent from "./components/FirstComponent";
 export default {
   name: "App",
-  components: {},
+  components: { FirstComponent },
 };
 </script>
 
