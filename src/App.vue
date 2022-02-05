@@ -1,16 +1,18 @@
 <template>
   <FirstComponent person="Paul" />
-  <Button color="blue" />
+  <Button color="gray" />
   <Names :names="names" />
+  <ClickedEvent />
 </template>
 
 <script>
 import FirstComponent from "./components/FirstComponent";
 import Button from "./components/Button";
 import Names from "./components/Names";
+import ClickedEvent from "./components/ClickedEvent";
 export default {
   name: "App",
-  components: { FirstComponent, Button, Names },
+  components: { FirstComponent, Button, Names, ClickedEvent },
   data() {
     return {
       names: [],
@@ -21,18 +23,22 @@ export default {
       {
         id: 1,
         name: "Paul",
+        age: 21,
       },
       {
         id: 2,
         name: "John",
+        age: 22,
       },
       {
         id: 1,
         name: "Mike",
+        age: 24,
       },
       {
         id: 1,
         name: "Mark",
+        age: 23,
       },
     ];
   },

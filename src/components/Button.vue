@@ -10,7 +10,7 @@ export default {
   },
   methods: {
     onClick() {
-      alert("clicked");
+      console.log("clicked");
     },
   },
 };
