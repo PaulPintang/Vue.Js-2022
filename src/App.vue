@@ -16,8 +16,11 @@ export default {
   data() {
     return {
       names: [],
+      name: "name1",
+      age: 20,
     };
   },
+
   created() {
     this.names = [
       {
