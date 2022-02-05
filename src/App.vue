@@ -1,17 +1,41 @@
 <template>
   <FirstComponent person="Paul" />
-  <Button color="blue"/>
+  <Button color="blue" />
+  <Names :names="names" />
 </template>
 
 <script>
 import FirstComponent from "./components/FirstComponent";
 import Button from "./components/Button";
+import Names from "./components/Names";
 export default {
   name: "App",
-  props: {
-     color: String,
+  components: { FirstComponent, Button, Names },
+  data() {
+    return {
+      names: [],
+    };
   },
-  components: { FirstComponent, Button },
+  created() {
+    this.names = [
+      {
+        id: 1,
+        name: "Paul",
+      },
+      {
+        id: 2,
+        name: "John",
+      },
+      {
+        id: 1,
+        name: "Mike",
+      },
+      {
+        id: 1,
+        name: "Mark",
+      },
+    ];
+  },
 };
 </script>
 
