@@ -1,5 +1,5 @@
 <template>
-  <FirstComponent />
+  <FirstComponent person="Paul" />
 </template>
 
 <script>

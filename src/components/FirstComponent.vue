@@ -1,11 +1,14 @@
 <template lang="">
   <div>
-    <h1>Hello world</h1>
+    <h1>{{ person }}</h1>
   </div>
 </template>
 <script>
 export default {
   name: "FirstComponent",
+  props: {
+    person: String,
+  },
 };
 </script>
 <style lang=""></style>
