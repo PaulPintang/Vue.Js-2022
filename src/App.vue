@@ -1,12 +1,17 @@
 <template>
   <FirstComponent person="Paul" />
+  <Button color="blue"/>
 </template>
 
 <script>
 import FirstComponent from "./components/FirstComponent";
+import Button from "./components/Button";
 export default {
   name: "App",
-  components: { FirstComponent },
+  props: {
+     color: String,
+  },
+  components: { FirstComponent, Button },
 };
 </script>
 

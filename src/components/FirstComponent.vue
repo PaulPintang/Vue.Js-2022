@@ -6,9 +6,7 @@
 <script>
 export default {
   name: "FirstComponent",
-  props: {
-    person: String,
-  },
+  
 };
 </script>
 <style lang=""></style>
