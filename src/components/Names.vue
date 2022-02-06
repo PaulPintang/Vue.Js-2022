@@ -16,7 +16,6 @@ export default {
   methods: {
     handleClick(name) {
       name.bool = !name.bool;
-      // console.log("clicked id:", name);
     },
   },
 };

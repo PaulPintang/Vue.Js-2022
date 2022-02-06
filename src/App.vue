@@ -1,5 +1,5 @@
 <template>
-  <FirstComponent person="Paul" />
+  <FirstComponent person="Paul Justine" age="21" />
   <Button color="gray" />
   <Names :names="names" />
   <Events />
