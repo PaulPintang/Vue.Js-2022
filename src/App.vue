@@ -1,6 +1,13 @@
 <template>
   <FirstComponent person="Paul Justine" age="21">
     <span>This message is slot or template that can pass to a component </span>
+    <template v-slot:numbers>
+      <ul>
+        <li>21</li>
+        <li>21</li>
+        <li>21</li>
+      </ul>
+    </template>
   </FirstComponent>
   <Button color="gray" />
   <Names :names="names" />

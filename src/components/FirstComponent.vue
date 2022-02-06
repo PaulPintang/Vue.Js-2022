@@ -1,6 +1,7 @@
 <template lang="">
   <div>
     <h1>{{ person }}</h1>
+    <slot name="numbers"></slot>
     <p>{{ age }}</p>
     <slot></slot>
   </div>
