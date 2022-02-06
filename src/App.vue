@@ -2,7 +2,7 @@
   <FirstComponent person="Paul" />
   <Button color="gray" />
   <Names :names="names" />
-  <ClickedEvent />
+  <Events />
   <Condition />
 </template>
 
@@ -11,10 +11,10 @@ import FirstComponent from "./components/FirstComponent";
 import Button from "./components/Button";
 import Names from "./components/Names";
 import Condition from "./components/Condition";
-import ClickedEvent from "./components/ClickedEvent";
+import Events from "./components/Events";
 export default {
   name: "App",
-  components: { FirstComponent, Button, Names, ClickedEvent, Condition },
+  components: { FirstComponent, Button, Names, Events, Condition },
   data() {
     return {
       names: [],

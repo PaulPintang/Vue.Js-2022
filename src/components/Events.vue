@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "ClickedEvent",
+  name: "Events",
   props: {
     names: Array,
   },
