@@ -14,6 +14,7 @@
   <Events />
   <Condition />
   <Bind :url="url" />
+  <Form />
 </template>
 
 <script>
@@ -23,9 +24,10 @@ import Names from "./components/Names";
 import Condition from "./components/Condition";
 import Events from "./components/Events";
 import Bind from "./components/Bind";
+import Form from "./components/Form";
 export default {
   name: "App",
-  components: { FirstComponent, Button, Names, Events, Condition, Bind },
+  components: { FirstComponent, Button, Names, Events, Condition, Bind, Form },
   data() {
     return {
       url: "https;//impaul.netlify.app",
