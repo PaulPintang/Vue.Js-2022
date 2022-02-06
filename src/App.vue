@@ -4,6 +4,7 @@
   <Names :names="names" />
   <Events />
   <Condition />
+  <Bind :url="url" />
 </template>
 
 <script>
@@ -12,11 +13,13 @@ import Button from "./components/Button";
 import Names from "./components/Names";
 import Condition from "./components/Condition";
 import Events from "./components/Events";
+import Bind from "./components/Bind";
 export default {
   name: "App",
-  components: { FirstComponent, Button, Names, Events, Condition },
+  components: { FirstComponent, Button, Names, Events, Condition, Bind },
   data() {
     return {
+      url: "https;//impaul.netlify.app",
       names: [],
       name: "name1",
       age: 20,
