@@ -3,7 +3,7 @@
     <div v-if="showName">
       {{ name }}
     </div>
-    <button @hover="showMyName">
+    <button @click="showMyName">
       <span v-if="showName">Hide Name</span>
       <span v-if="!showName">Show Name</span>
     </button>

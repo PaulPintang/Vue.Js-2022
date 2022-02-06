@@ -1,6 +1,9 @@
 <template>
   <div :key="name.id" v-for="name in names">
-    <p>{{ name.name }}</p>
+    <p @click="handleClick(name)" :class="{ underline: name.bool }">
+      {{ name.name }}
+      {{ name.bool }}
+    </p>
   </div>
 </template>
 
@@ -10,7 +13,17 @@ export default {
   props: {
     names: Array,
   },
+  methods: {
+    handleClick(name) {
+      name.bool = !name.bool;
+      // console.log("clicked id:", name);
+    },
+  },
 };
 </script>
 
-<style></style>
+<style>
+.underline {
+  text-decoration: line-through;
+}
+</style>

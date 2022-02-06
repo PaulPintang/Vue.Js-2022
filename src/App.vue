@@ -32,21 +32,25 @@ export default {
         id: 1,
         name: "Paul",
         age: 21,
+        bool: false,
       },
       {
         id: 2,
         name: "John",
         age: 22,
+        bool: false,
       },
       {
-        id: 1,
+        id: 3,
         name: "Mike",
         age: 24,
+        bool: false,
       },
       {
-        id: 1,
+        id: 4,
         name: "Mark",
         age: 23,
+        bool: false,
       },
     ];
   },
