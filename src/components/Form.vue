@@ -13,11 +13,13 @@
         <option value="developer">Web Developer</option>
         <option value="designer">Web Designer</option>
       </select>
+      <input type="checkbox" v-model="check" />
     </form>
     <div>
       <p>Email: {{ email }}</p>
       <p>Password: {{ password }}</p>
       <p>Role: {{ role }}</p>
+      <p>Checked: {{ check }}</p>
     </div>
   </div>
 </template>
@@ -30,6 +32,7 @@ export default {
       email: "",
       password: "",
       role: "",
+      check: false,
     };
   },
 };
