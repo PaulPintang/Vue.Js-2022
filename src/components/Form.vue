@@ -8,10 +8,16 @@
         v-model="password"
         required
       />
+      <p>SELECTION</p>
+      <select v-model="role">
+        <option value="developer">Web Developer</option>
+        <option value="designer">Web Designer</option>
+      </select>
     </form>
     <div>
       <p>Email: {{ email }}</p>
       <p>Password: {{ password }}</p>
+      <p>Role: {{ role }}</p>
     </div>
   </div>
 </template>
@@ -23,6 +29,7 @@ export default {
     return {
       email: "",
       password: "",
+      role: "",
     };
   },
 };
