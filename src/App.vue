@@ -1,5 +1,7 @@
 <template>
-  <FirstComponent person="Paul Justine" age="21" />
+  <FirstComponent person="Paul Justine" age="21">
+    <span>This message is slot or template that can pass to a component </span>
+  </FirstComponent>
   <Button color="gray" />
   <Names :names="names" />
   <Events />
